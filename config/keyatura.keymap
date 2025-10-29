@@ -161,13 +161,13 @@
             timeout-ms = <50>;
             key-positions = <21 22>;
             layers = <4>;
-            bindings = <&bt LG(GRAVE)>;
+            bindings = <&kp LG(GRAVE)>;
         };
         combo_gui_grave_right {
             timeout-ms = <50>;
             key-positions = <28 29>;
             layers = <4>;
-            bindings = <&bt LG(GRAVE)>;
+            bindings = <&kp LG(GRAVE)>;
         };
     };
 
