@@ -101,16 +101,10 @@
 // DEFAULT
 //┏━━━━━━┳━━━━━━┳━━━━━━┳━━━━━━┳━━━━━━┓   ┏━━━━━━┳━━━━━━┳━━━━━━┳━━━━━━┳━━━━━━┓
 //┃      ┃      ┃      ┃      ┃      ┃   ┃      ┃      ┃     ([)    (])     ┃
-//┃      ┃      ┃      ┃      ┃      ┃   ┃      ┃      ┃      ┃      ┃      ┃
-//┃     (`)     ┃      ┃      ┃      ┃   ┃      ┃      ┃      ┃     (\)     ┃
+//┃     (`)     ┃      ┃      ┃      ┃   ┃      ┃      ┃      ┃     (')     ┃
+//┃      ┃      ┃      ┃      ┃      ┃   ┃      ┃      ┃      ┃     (\)     ┃
 //┗━━━━━━┻━━━━━━┫      ┃      ┃      ┃   ┃      ┃      ┃      ┣━━━━━━┻━━━━━━┛
 //              ┗━━━━━━┻━━━━━━┻━━━━━━┛   ┗━━━━━━┻━━━━━━┻━━━━━━┛
-        combo_grave {
-            timeout-ms = <50>;
-            key-positions = <20 21>;
-            layers = <DEF>;
-            bindings = <&kp GRAVE>;
-        };
         combo_lbkt {
             timeout-ms = <50>;
             key-positions = <7 8>;
@@ -122,6 +116,18 @@
             key-positions = <8 9>;
             layers = <DEF>;
             bindings = <&kp RBKT>;
+        };
+        combo_grave {
+            timeout-ms = <50>;
+            key-positions = <10 11>;
+            layers = <DEF>;
+            bindings = <&kp GRAVE>;
+        };
+        combo_quote {
+            timeout-ms = <50>;
+            key-positions = <18 19>;
+            layers = <DEF>;
+            bindings = <&kp SQT>;
         };
         combo_bslh {
             timeout-ms = <50>;
@@ -223,7 +229,7 @@
 //┃   Q  ┃   W  ┃   E  ┃   R  ┃   T  ┃   ┃   Y  ┃   U  ┃   I  ┃   O  ┃   P  ┃
 //┃   A  ┃LGUI/S┃LALT/D┃CTRL/F┃   G  ┃   ┃   H  ┃CTRL/J┃RALT/K┃RGUI/L┃   ;  ┃
 //┃   Z  ┃   X  ┃   C  ┃   V  ┃   B  ┃   ┃   N  ┃   M  ┃   ,  ┃   .  ┃   /  ┃
-//┗━━━━━━┻━━━━━━┫  TAB ┃SH/SPC┃  SPC ┃   ┃  SPC ┃SH/BSP┃  DEL ┣━━━━━━┻━━━━━━┛
+//┗━━━━━━┻━━━━━━┫  TAB ┃SH/SPC┃ ENTER┃   ┃  ESC ┃SH/BSP┃  DEL ┣━━━━━━┻━━━━━━┛
 //              ┗━━━━━━┻━━━━━━┻━━━━━━┛   ┗━━━━━━┻━━━━━━┻━━━━━━┛
 
             bindings = <
@@ -231,7 +237,7 @@
                 &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U &kp I &kp O &kp P
                 &kp A &mt LGUI S &mt_h LALT D &mt_h LCTRL F &kp G   &kp H &mt_h RCTRL J &mt_h RALT K &mt_h RGUI L &kp SEMI
                 &lt WIN Z &kp X &kp C &kp V &kp B   &kp N &kp M &kp COMMA &kp DOT &lt WIN FSLH
-                &lt RSE TAB &mt LSHFT SPACE &lt LWR SPACE   &lt LWR SPACE &mt RSHFT BSPC &lt RSE DEL
+                &lt RSE TAB &mt LSHFT SPACE &lt LWR RET   &lt LWR ESC &mt RSHFT BSPC &lt RSE DEL
             >;
         };
 
@@ -241,7 +247,7 @@
 //┃  F1  ┃  F2  ┃  F3  ┃  F4  ┃  F5  ┃   ┃  F6  ┃  F7  ┃  F8  ┃  F9  ┃  F10 ┃
 //┃   !  ┃LGUI/@┃LALT/#┃CTRL/$┃   %  ┃   ┃   ˆ  ┃CTRL/&┃RALT/*┃RGUI/(┃   )  ┃
 //┃   1  ┃   2  ┃   3  ┃   4  ┃   5  ┃   ┃   6  ┃   7  ┃   8  ┃   9  ┃   0  ┃
-//┗━━━━━━┻━━━━━━┫  ADJ ┃ -//- ┃ ENTER┃   ┃  ESC ┃ -//- ┃  ADJ ┣━━━━━━┻━━━━━━┛
+//┗━━━━━━┻━━━━━━┫  ADJ ┃ -//- ┃ -//- ┃   ┃ -//- ┃ -//- ┃  ADJ ┣━━━━━━┻━━━━━━┛
 //              ┗━━━━━━┻━━━━━━┻━━━━━━┛   ┗━━━━━━┻━━━━━━┻━━━━━━┛
 
             bindings = <
@@ -249,7 +255,7 @@
                 &kp F1 &kp F2 &kp F3 &kp F4 &kp F5   &kp F6 &kp F7 &kp F8 &kp F9 &kp F10
                 &kp EXCL &mt_h LGUI AT &mt_h LALT HASH &mt_h LCTRL DLLR &kp PRCNT   &kp CARET &mt_h RCTRL AMPS &mt_h RALT ASTRK &mt_h RGUI LPAR &kp RPAR
                 &kp N1 &kp N2 &kp N3 &kp N4 &kp N5   &kp N6 &kp N7 &kp N8 &kp N9 &kp N0
-                &mo ADJ &trans &kp RET   &kp ESC &trans &mo ADJ
+                &mo ADJ &trans &trans   &trans &trans &mo ADJ
             >;
         };
 
