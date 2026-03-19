@@ -94,8 +94,8 @@
 
         NAV {
             bindings = <
-&kp N6    &kp N7             &kp N8             &kp N9                &kp N0   &kp C_MUTE        &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp PRINTSCREEN  &out OUT_TOG
-&kp N1    &kp N2             &kp N3             &kp N4                &kp N5   &kp LEFT          &kp DOWN           &kp UP           &kp RIGHT        &bt BT_NXT
+&kp N6    &kp N7             &kp N8             &kp N9                &kp N0   &kp C_MUTE        &kp UP  &kp C_VOLUME_UP  &kp PRINTSCREEN  &out OUT_TOG
+&kp N1    &kp N2             &kp N3             &kp N4                &kp N5   &kp LEFT          &kp DOWN           &kp RIGHT           &kp RIGHT        &bt BT_NXT
 &kp PLUS  &kp ASTERISK       &kp EQUAL          &kp MINUS             &kp DOT  &kp HOME          &kp PAGE_DOWN      &kp PG_UP        &kp END          &kp BACKSLASH
           &u_mt LCTRL ENTER  &u_mt LSHFT SPACE  &u_mt LALT BACKSPACE           &trans   &trans            &trans
           >;
