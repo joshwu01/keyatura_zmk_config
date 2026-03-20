@@ -52,6 +52,7 @@
         zmk,kscan = <&kscan0>;
         zmk,physical-layouts = &keyature_layout;
     };
+};
 &dactyl_layout{
 	transform = <&default_transform>;
 	kscan = <&kscan0>;
