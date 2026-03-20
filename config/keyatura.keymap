@@ -96,7 +96,7 @@
 
         F_layer {
             bindings = <
-&kp F6   &kp F7   &kp F8   &kp F9   &kp F10  &studio_unlock  &ind_bat        &ind_con        &kp DOLLAR   &trans
+&kp F6   &kp F7   &kp F8   &kp F9   &kp F10  &studio_unlock  &trans     &trans       &kp DOLLAR   &trans
 &kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &kp AMPS        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE    &kp SINGLE_QUOTE
 &kp F11  &kp F12  &kp F13  &kp F14  &kp F15  &kp ASTERISK    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT  &trans
          &kp LCTRL  &kp LEFT_SHIFT  &kp LEFT_ALT  &trans   &trans          &trans
