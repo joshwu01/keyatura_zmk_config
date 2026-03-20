@@ -1,5 +1,6 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include "keyatura-layouts.dtsi"
+#include "leds.dtsi"
 
 
 / {
